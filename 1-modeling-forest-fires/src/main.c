@@ -22,22 +22,23 @@ int main(int argc, char *argv[]) {
 	}
 
 	int height = atoi(argv[1]), width = atoi(argv[2]), iter_num = atoi(argv[5]);
-	float g = atof(argv[3]), f = atof(argv[4]);
+	double g = atof(argv[3]), f = atof(argv[4]);
 	// log something
 
 	// 2. run the simulation
 	// a. initiate variables
 	int p[iter_num];  // store the P after each time step
 	bool grid[width][height];  // initiate the forest grid
+
 	// b. begin simulation
 	for (int i = 0; i < iter_num; i++) {
-		run_growth_phase(grid, g);
-		run_fire_phase(grid, f);
-		p[i] = compute_p(grid);
+		run_growth_phase(grid, height, width, g);
+		run_fire_phase(grid, height, width, f);
+		p[i] = count_trees(grid, height, width);
 	}
 
 	// 3. print the result
-	float avg_p = 0;
+	double avg_p = 0;
 	for (int i = 0; i < iter_num; i++) {
 		avg_p += p[i];
 	}
