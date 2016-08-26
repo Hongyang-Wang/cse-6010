@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+#include "forest_fire.h"
 
 int main(int argc, char *argv[]) {
 
@@ -23,18 +25,20 @@ int main(int argc, char *argv[]) {
 
 	int height = atoi(argv[1]), width = atoi(argv[2]), iter_num = atoi(argv[5]);
 	double g = atof(argv[3]), f = atof(argv[4]);
-	// log something
+	printf("Running simulation: grid_size = %d x %d, g = %f, f = %f, iter_num = %d\n", \
+			height, width, g, f, iter_num);
 
 	// 2. run the simulation
 	// a. initiate variables
 	int p[iter_num];  // store the P after each time step
-	bool grid[width][height];  // initiate the forest grid
+	bool grid[height][width];  // initiate the forest grid
+	memset(grid, false, sizeof(grid));
 
 	// b. begin simulation
 	for (int i = 0; i < iter_num; i++) {
-		run_growth_phase(grid, height, width, g);
-		run_fire_phase(grid, height, width, f);
-		p[i] = count_trees(grid, height, width);
+		run_growth_phase(*grid, height, width, g);
+		run_fire_phase(*grid, height, width, f);
+		p[i] = count_trees(*grid, height, width);
 	}
 
 	// 3. print the result
@@ -43,6 +47,7 @@ int main(int argc, char *argv[]) {
 		avg_p += p[i];
 	}
 	avg_p /= iter_num;
+	printf("Average P: %f\n", avg_p);
 
 	return 0;
 }

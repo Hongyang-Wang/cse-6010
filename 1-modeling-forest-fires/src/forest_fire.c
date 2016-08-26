@@ -1,47 +1,63 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 
+static double _gen_rand(void);
+static void _dfs(bool *grid, int height, int width, int i, int j);
 
-void run_growth_phase(bool grid[][], int height, int width, double g) {
+void run_growth_phase(bool *grid, int height, int width, double g) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
-			if (!grid[i][j] && _gen_rand() < g)
-				grid[i][j] = true;
+			if (!*(grid + i * width + j) && _gen_rand() < g)
+				*(grid + i * width + j) = true;
 		}
 	}
 }
 
-void run_fire_phase(bool grid[][], int height, int width, double f) {
+void run_fire_phase(bool *grid, int height, int width, double f) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
-			if (grid[i][j] && _gen_rand() < f)
+			if (*(grid + i * width + j) && _gen_rand() < f)
 				_dfs(grid, height, width, i, j);
 		}
 	}
 }
 
-int count_trees(bool grid[][], int height, int width) {
+int count_trees(bool *grid, int height, int width) {
 	int count = 0;
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
-			if (grid[i][j])
+			if (*(grid + i * width + j))
 				count++;
 		}
 	}
 	return count;
 }
 
+void print_forest(bool *grid, int height, int width) {
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			if (*(grid + i * width + j))
+				printf("Y");
+			else
+				printf(".");
+		}
+		printf("\n");
+	}
+	printf("\n");
+}
+
 static double _gen_rand() {
 	return (double)rand() / RAND_MAX;
 }
 
-static void _dfs(bool grid[][], int height, int width, int i, int j) {
-	if (i >= height || i < 0 || j >= width || j < 0 || !grid[i][j])
+static void _dfs(bool *grid, int height, int width, int i, int j) {
+	if (i >= height || i < 0 || j >= width || j < 0 || !*(grid + i * width + j))
 		return;
-	grid[i][j] = false;
-	int orientation[][] = {{-1, 1, 0, 0}, {0, 0, -1, 1}};
+	*(grid + i * width + j) = false;
+	static const int orientation[][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};  // north, south, west, east
 	for (int k = 0; k < 4; k++) {
-		_dfs(grid, height, width, i + orientation[k][0], j + orientation[k][0]);
+		_dfs(grid, height, width, i + orientation[k][0], j + orientation[k][1]);
 	}
 }
