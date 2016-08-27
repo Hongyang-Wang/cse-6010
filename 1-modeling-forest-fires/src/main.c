@@ -25,8 +25,8 @@ int main(int argc, char *argv[]) {
 
 	int height = atoi(argv[1]), width = atoi(argv[2]), iter_num = atoi(argv[5]);
 	double g = atof(argv[3]), f = atof(argv[4]);
-	printf("Running simulation: grid_size = %d x %d, g = %f, f = %f, iter_num = %d\n", \
-			height, width, g, f, iter_num);
+//	printf("Running simulation: grid_size = %d x %d, g = %f, f = %f, iter_num = %d\n", \
+//			height, width, g, f, iter_num);
 
 	// 2. run the simulation
 	// a. initiate variables
@@ -46,8 +46,10 @@ int main(int argc, char *argv[]) {
 	for (int i = 0; i < iter_num; i++) {
 		avg_p += p[i];
 	}
-	avg_p /= iter_num;
-	printf("Average P: %f\n", avg_p);
+	avg_p /= iter_num * height * width;
+//	printf("Average P: %f\n", avg_p);
+
+	printf("%f\t%f\t%f\n", f, g, avg_p);
 
 	return 0;
 }
