@@ -31,8 +31,9 @@ int main(int argc, char *argv[]) {
 	// 2. run the simulation
 	// a. initiate variables
 	int p[iter_num];  // store the P after each time step
-	bool grid[height][width];  // initiate the forest grid
+	bool grid[height][width];  // initialize the forest grid
 	memset(grid, false, sizeof(grid));
+	srand(6010);  // initialize the random seed
 
 	// b. begin simulation
 	for (int i = 0; i < iter_num; i++) {
