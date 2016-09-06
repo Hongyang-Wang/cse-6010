@@ -40,13 +40,12 @@ void print_forest(bool *grid, int height, int width) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
 			if (*(grid + i * width + j))
-				printf("Y");
+				printf(" Y ");
 			else
-				printf(".");
+				printf(" . ");
 		}
 		printf("\n");
 	}
-	printf("\n");
 }
 
 static double _gen_rand() {
