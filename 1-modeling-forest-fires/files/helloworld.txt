@@ -17,3 +17,4 @@ int main(void) {
 }
 
 // ssh hwang453@jinx-login.cc.gatech.edu
+// qsub -I -q class -l nodes=1 -l walltime=00:05:00

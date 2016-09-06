@@ -7,6 +7,7 @@ static void _dfs(bool *grid, int height, int width, int i, int j);
 
 static const int NEIGHBORS[][2] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};  // north, south, west, east
 
+/* simulate the growth phase */
 void run_growth_phase(bool *grid, int height, int width, double g) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
@@ -16,6 +17,7 @@ void run_growth_phase(bool *grid, int height, int width, double g) {
 	}
 }
 
+/* simulate the fire phase */
 void run_fire_phase(bool *grid, int height, int width, double f) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
@@ -25,6 +27,7 @@ void run_fire_phase(bool *grid, int height, int width, double f) {
 	}
 }
 
+/* count the total number of trees in the grid */
 int count_trees(bool *grid, int height, int width) {
 	int count = 0;
 	for (int i = 0; i < height; i++) {
@@ -36,6 +39,7 @@ int count_trees(bool *grid, int height, int width) {
 	return count;
 }
 
+/* print the forest */
 void print_forest(bool *grid, int height, int width) {
 	for (int i = 0; i < height; i++) {
 		for (int j = 0; j < width; j++) {
@@ -48,10 +52,11 @@ void print_forest(bool *grid, int height, int width) {
 	}
 }
 
+/* generate a random number between 0 and 1 */
 static double _gen_rand() {
 	return (double)rand() / RAND_MAX;
 }
-
+/* recursively burn all the trees connected to the tree at (i, j) using depth-first search */
 static void _dfs(bool *grid, int height, int width, int i, int j) {
 	if (i >= height || i < 0 || j >= width || j < 0 || !*(grid + i * width + j))
 		return;

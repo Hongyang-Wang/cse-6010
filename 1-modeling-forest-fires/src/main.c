@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 
 	int height = atoi(argv[1]), width = atoi(argv[2]), iter_num = atoi(argv[5]);
 	double g = atof(argv[3]), f = atof(argv[4]);
-	bool is_debug = atoi(argv[6]);
+	bool is_debug = atoi(argv[6]);  // 0 - not debug, 1 - with debug
 	if (is_debug) {
 		printf("Running simulation: grid_size = %d x %d, g = %f, f = %f, iter_num = %d\n", \
 				height, width, g, f, iter_num);
@@ -41,16 +41,19 @@ int main(int argc, char *argv[]) {
 
 	// b. begin simulation
 	for (int i = 0; i < iter_num; i++) {
+		// run the growth phase
 		run_growth_phase(*grid, height, width, g);
 		if (is_debug) {
 			printf("t = %d, after growth phase:\n", i);
 			print_forest(*grid, height, width);
 		}
+		// run the fire phase
 		run_fire_phase(*grid, height, width, f);
 		if (is_debug) {
 			printf("t = %d, after fire phase:\n", i);
 			print_forest(*grid, height, width);
 		}
+		// count the number of trees left
 		p[i] = count_trees(*grid, height, width);
 		if (is_debug) {
 			printf("Number of trees = %d\n", p[i]);
@@ -63,7 +66,7 @@ int main(int argc, char *argv[]) {
 	for (int i = 0; i < iter_num; i++) {
 		avg_p += p[i];
 	}
-	avg_p /= iter_num * height * width;
+	avg_p /= iter_num * height * width;  // compute the average trees per area
 	if (is_debug)
 		printf("Simulation is over, average P (per cell): %f\n", avg_p);
 	if (!is_debug)
