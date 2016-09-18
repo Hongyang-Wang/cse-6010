@@ -10,6 +10,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "event/event_data.h"
+#include "event/event_handler.h"
 #include "utils/queue/Queue.h"
 #include "utils/priority_queue/PriorityQueue.h"
 
@@ -20,6 +22,8 @@ int part_counter = 0;
 double simu_time;
 Queue **q_list = NULL;
 PriorityQueue *pq = NULL;
+// statistic variables
+
 
 int main(int argc, char *argv[]) {
 	// parse input arguments

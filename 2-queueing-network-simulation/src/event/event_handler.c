@@ -29,17 +29,19 @@ int event_cmp(void *d1, void *d2) {
 		return 0;
 }
 
-void free_event(Event *event) {
-	free(event);
-	event = NULL;
+void free_event(void *event) {
+	Event *e = (Event *) event;
+	free(e);
+	e = NULL;
 }
 
-void free_part(Part *part) {
-	free(part->service_times);
-	free(part->enqueue_times);
-	free(part->dequeue_times);
-	free(part);
-	part = NULL;
+void free_part(void *part) {
+	Part *p = (Part *) part;
+	free(p->service_times);
+	free(p->enqueue_times);
+	free(p->dequeue_times);
+	free(p);
+	p = NULL;
 }
 
 void schedule_next_event(double start_time, double station_id, void (*event_handler)()) {
