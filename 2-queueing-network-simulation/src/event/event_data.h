@@ -8,21 +8,20 @@
 #ifndef EVENT_DATA_H_
 #define EVENT_DATA_H_
 
-typedef struct _part {
+typedef struct {
 	int id;
 	double create_time;
 	double finish_time;
-	int LEN;
-    double *service_times;
-    double *waiting_times;
+    double* service_times;
+    double* waiting_times;
     int counter;
 
 } Part;
 
-typedef struct _event {
+typedef struct {
 	double start_time;
-	Part part;
-	void (*event_handler) (Part p);
+	Part *part;
+	void (*event_handler) ();
 
 } Event;
 

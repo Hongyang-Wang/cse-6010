@@ -8,6 +8,6 @@
 #ifndef UTILS_RANDOM_RANDOM_H_
 #define UTILS_RANDOM_RANDOM_H_
 
-double gen_exp_rand(double mean);
+double get_exp_rand(double mean);
 
 #endif /* UTILS_RANDOM_RANDOM_H_ */
