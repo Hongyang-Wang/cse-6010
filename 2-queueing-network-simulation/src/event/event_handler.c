@@ -15,6 +15,7 @@
 extern double S, A;
 extern int num_stations;
 extern int part_counter;
+extern double simu_time;
 extern Queue **q_list;
 extern PriorityQueue *pq;
 
@@ -42,6 +43,8 @@ void free_part(Part *part) {
 }
 
 void schedule_next_event(double start_time, double station_id, void (*event_handler)()) {
+	if (start_time >= simu_time)
+		return;
 	Event *next_event = (Event *) malloc(sizeof(Event));
 	next_event->start_time = start_time;
 	next_event->station_id = station_id;
