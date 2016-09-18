@@ -7,10 +7,15 @@
 
 #include <stdlib.h>
 #include "event_data.h"
-#include "utils/random/random.h"
+#include "../utils/random/random.h"
+#include "../utils/queue/Queue.h"
+#include "../utils/priority_queue/PriorityQueue.h"
 
 extern double S, A;
 extern int num_stations;
+extern int part_counter;
+extern Queue **q_list;
+extern PriorityQueue *pq;
 
 int event_cmp(void *d1, void *d2) {
 	Event *e1 = (Event *) d1, *e2 = (Event *) d2;
@@ -22,8 +27,87 @@ int event_cmp(void *d1, void *d2) {
 		return 0;
 }
 
-void create_part() {
-	double interval = get_exp_rand(A);
-
-
+void free_event(Event *event) {
+	free(event);
+	event = NULL;
 }
+
+void free_part(Part *part) {
+	free(part->service_times);
+	free(part->enqueue_times);
+	free(part->dequeue_times);
+	free(part);
+	part = NULL;
+}
+
+void schedule_next_event(double start_time, double station_id, void (*event_handler)()) {
+	Event *next_event = (Event *) malloc(sizeof(Event));
+	next_event->start_time = start_time;
+	next_event->station_id = station_id;
+	next_event->event_handler = event_handler;
+	pq_push(pq, next_event);
+}
+
+void leave(Event *event) {
+	Part *part = q_pop(q_list[event->station_id]);
+	// schedule next service event for the next part in the queue of this station
+	if (q_size(q_list[event->station_id]) > 0) {
+		schedule_next_event(event->start_time, event->station_id, &start_service);
+	}
+	// done if this is the last station
+	if (event->station_id == num_stations) {
+		part->finish_time = event->start_time;
+		// do some statistics
+
+		// free this part
+		free_part(part);
+	}
+	else {  // enqueue the current part into next station's queue
+		q_push(q_list[event->station_id + 1], part);
+		part->enqueue_times[event->station_id + 1] = event->start_time;
+		// schedule the service event for the next station if it's free
+		if (q_size(q_list[event->station_id + 1]) == 1) {
+			schedule_next_event(event->start_time, event->station_id + 1, &start_service);
+		}
+	}
+	// free current event
+	free_event(event);
+}
+
+void start_service(Event *event) {
+	// get the part for this event
+	Part *part = q_peek(q_list[event->station_id]);
+	part->dequeue_times[event->station_id] = event->start_time;
+	// schedule dequeue event for this part
+	schedule_next_part(event->start_time + part->service_times[event->station_id], event->station_id, &leave);
+	// free this event
+	free_event(event);
+}
+
+void create_part(Event *event) {
+	// create part for this event
+	part_counter++;
+	Part *part = (Part *) malloc(sizeof(Part));
+	part->create_time = event->start_time;
+	part->id = part_counter;
+	part->service_times = (double *) malloc(num_stations * sizeof(double));
+	for (int i = 0; i < num_stations; i++) {
+		part->service_times[i] = get_exp_rand(S);
+	}
+	part->enqueue_times = (double *) malloc(num_stations * sizeof(double));
+	part->dequeue_times = (double *) malloc(num_stations * sizeof(double));
+	part->finish_time = -1;
+	// schedule next create event
+	double interval = get_exp_rand(A);
+	schedule_next_event(event->start_time + interval, -1, &create_part);
+	// send this part to the first station
+	q_push(q_list[0], part);
+	part->enqueue_times[0] = event->start_time;
+	// schedule the service event if the first station is available
+	if (q_size(q_list[0]) == 1) {
+		schedule_next_event(event->start_time, 0, &start_service);
+	}
+	// free this event
+	free_event(event);
+}
+

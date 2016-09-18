@@ -5,24 +5,23 @@
  *      Author: Frank
  */
 
-#ifndef EVENT_DATA_H_
-#define EVENT_DATA_H_
+#ifndef EVENT_EVENT_DATA_H_
+#define EVENT_EVENT_DATA_H_
 
 typedef struct {
 	int id;
 	double create_time;
 	double finish_time;
     double* service_times;
-    double* waiting_times;
-    int counter;
+    double* enqueue_times, dequeue_times;
 
 } Part;
 
 typedef struct {
 	double start_time;
-	Part *part;
+	int station_id;
 	void (*event_handler) ();
 
 } Event;
 
-#endif /* EVENT_DATA_H_ */
+#endif /* EVENT_EVENT_DATA_H_ */

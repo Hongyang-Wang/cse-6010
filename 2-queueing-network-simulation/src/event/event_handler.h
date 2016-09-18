@@ -5,9 +5,9 @@
  *      Author: Frank
  */
 
-#ifndef EVENT_H_
-#define EVENT_H_
+#ifndef EVENT_EVENT_H_
+#define EVENT_EVENT_H_
 
 
 
-#endif /* EVENT_H_ */
+#endif /* EVENT_EVENT_H_ */

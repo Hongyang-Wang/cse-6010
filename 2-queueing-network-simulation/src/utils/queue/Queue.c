@@ -30,6 +30,11 @@ void q_push(Queue *q, void *p) {
 }
 
 void *q_peek(Queue *q) {
+	void *ret = NULL;
+	if (q->size == 0) {
+		printf("The Queue is empty\n");
+		return ret;
+	}
 	return q->head->data;
 }
 
@@ -47,11 +52,11 @@ void *q_pop(Queue *q) {
 	return ret;
 }
 
-void q_clear(Queue *q) {
+void q_clear(Queue *q, void (*free_data)(void *)) {
 	while (q->size > 0) {
 		QNode *temp = q->head;
 		q->head = temp->next;
-		free(temp->data);
+		free_data(temp->data);
 		free(temp);
 		q->size--;
 	}

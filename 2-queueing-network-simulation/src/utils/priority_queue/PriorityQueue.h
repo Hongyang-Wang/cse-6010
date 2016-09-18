@@ -14,7 +14,7 @@ typedef struct _min_priority_queue {
 
 PriorityQueue pq_init(int (*cmp) (void *o1, void *o2));
 int pq_size(PriorityQueue *q);
-int pq_push(PriorityQueue *q, void *p);
+void pq_push(PriorityQueue *q, void *p);
 void *pq_pop(PriorityQueue *q);
 void *pq_peek(PriorityQueue *q);
 

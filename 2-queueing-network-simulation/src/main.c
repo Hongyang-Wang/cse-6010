@@ -17,6 +17,11 @@ typedef struct {
 
 } student;
 
+void free_student(student * p) {
+	free(p);
+	p = NULL;
+}
+
 int main(void) {
 	Queue q;
 	q_init(&q);
@@ -35,6 +40,6 @@ int main(void) {
 		p = NULL;
 	}
 	printf("size=%d\n", q_size(&q));
-	q_clear(&q);
+	q_clear(&q, &free_student);
 	printf("size=%d\n", q_size(&q));
 }

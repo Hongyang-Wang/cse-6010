@@ -23,6 +23,6 @@ int q_size(Queue *q);
 void q_push(Queue *q, void *p);
 void *q_peek(Queue *q);
 void *q_pop(Queue *q);
-void q_clear(Queue *q);
+void q_clear(Queue *q, void (*free_data)(void *));
 
 #endif /* UTILS_QUEUE_QUEUE_H_ */
