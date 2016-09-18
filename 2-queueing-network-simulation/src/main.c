@@ -11,16 +11,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "utils/queue/Queue.h"
+#include "utils/priority_queue/PriorityQueue.h"
 
 typedef struct {
 	int id;
 
 } student;
 
-void free_student(student * p) {
+void free_student(void * p) {
+	p = (student *) p;
 	free(p);
 	p = NULL;
 }
+
+int S = 0, A = 0;
+int num_stations = 0;
+int part_counter = 0;
+Queue **q_list = NULL;
+PriorityQueue *pq = NULL;
 
 int main(void) {
 	Queue q;

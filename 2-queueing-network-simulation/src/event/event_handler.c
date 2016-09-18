@@ -7,6 +7,7 @@
 
 #include <stdlib.h>
 #include "event_data.h"
+#include "event_handler.h"
 #include "../utils/random/random.h"
 #include "../utils/queue/Queue.h"
 #include "../utils/priority_queue/PriorityQueue.h"
@@ -79,7 +80,8 @@ void start_service(Event *event) {
 	Part *part = q_peek(q_list[event->station_id]);
 	part->dequeue_times[event->station_id] = event->start_time;
 	// schedule dequeue event for this part
-	schedule_next_part(event->start_time + part->service_times[event->station_id], event->station_id, &leave);
+	double next_start_time = event->start_time + part->service_times[event->station_id];
+	schedule_next_event(next_start_time, event->station_id, &leave);
 	// free this event
 	free_event(event);
 }

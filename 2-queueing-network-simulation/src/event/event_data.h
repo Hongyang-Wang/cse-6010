@@ -13,7 +13,7 @@ typedef struct {
 	double create_time;
 	double finish_time;
     double* service_times;
-    double* enqueue_times, dequeue_times;
+    double* enqueue_times, *dequeue_times;
 
 } Part;
 

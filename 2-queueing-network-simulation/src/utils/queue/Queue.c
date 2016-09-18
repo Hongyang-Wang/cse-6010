@@ -6,6 +6,7 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
 #include "Queue.h"
 
 void q_init(Queue *q) {
