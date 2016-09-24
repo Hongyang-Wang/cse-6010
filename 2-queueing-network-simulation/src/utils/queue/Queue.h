@@ -2,7 +2,7 @@
  * Queue.h
  *
  *  Created on: Sep 16, 2016
- *      Author: Frank
+ *      Author: YS
  */
 
 #ifndef UTILS_QUEUE_QUEUE_H_

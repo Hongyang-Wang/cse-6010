@@ -1,8 +1,8 @@
 /*
  * random.h
  *
- *  Created on: Sep 16, 2016
- *      Author: Frank
+ *  Created on: Sep 22, 2016
+ *      Author: YS
  */
 
 #ifndef UTILS_RANDOM_RANDOM_H_

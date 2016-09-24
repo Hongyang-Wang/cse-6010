@@ -2,7 +2,7 @@
  * Queue.c
  *
  *  Created on: Sep 16, 2016
- *      Author: Frank
+ *      Author: YS
  */
 
 #include <stdlib.h>
