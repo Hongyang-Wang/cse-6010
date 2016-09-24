@@ -24,31 +24,6 @@ extern int debug;
 extern double sum_total_time, avg_total_time;
 extern double sum_waiting_time, avg_waiting_time;
 
-int event_cmp(void *d1, void *d2) {
-	Event *e1 = (Event *) d1, *e2 = (Event *) d2;
-	if (e1->start_time < e2->start_time)
-		return -1;
-	else if (e1->start_time > e2->start_time)
-		return 1;
-	else
-		return 0;
-}
-
-void free_event(void *event) {
-	Event *e = (Event *) event;
-	free(e);
-	e = NULL;
-}
-
-void free_part(void *part) {
-	Part *p = (Part *) part;
-	free(p->service_times);
-	free(p->enqueue_times);
-	free(p->dequeue_times);
-	free(p);
-	p = NULL;
-}
-
 void schedule_next_event(double start_time, double station_id, void (*event_handler)()) {
 	if (start_time >= simu_time)
 		return;
