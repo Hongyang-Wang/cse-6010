@@ -20,6 +20,9 @@ extern double simu_time;
 extern Queue **q_list;
 extern PriorityQueue *pq;
 extern int debug;
+// statistic variables
+extern double sum_total_time, avg_total_time;
+extern double sum_waiting_time, avg_waiting_time;
 
 int event_cmp(void *d1, void *d2) {
 	Event *e1 = (Event *) d1, *e2 = (Event *) d2;
@@ -58,34 +61,54 @@ void schedule_next_event(double start_time, double station_id, void (*event_hand
 
 void leave(Event *event) {
 	Part *part = q_pop(q_list[event->station_id]);
-	printf("pop part_id=%d from queue %c\n", part->id, 'A' + event->station_id);
+	// ----
+	if (debug) {
+		printf("Dequeue \t%f\t%-8c\t%d\n", event->start_time, 'A' + event->station_id, part->id);
+	}
+	// ----
 	// schedule next service event for the next part in the queue of this station
 	if (q_size(q_list[event->station_id]) > 0) {
 		schedule_next_event(event->start_time, event->station_id, &start_service);
 	}
 	// ----
 	if (debug) {
-		printf("Service done\tcur_time=%f\tpart_id=%d\tstation_id=%c\n", \
-				event->start_time, part->id, 'A' + event->station_id);
+		printf("End_Serv\t%f\t%-8c\t%d\n", event->start_time, 'A' + event->station_id, part->id);
 	}
 	// ----
 	// done if this is the last station
 	if (event->station_id == num_stations - 1) {
 		part->finish_time = event->start_time;
 		// do some statistics
-
+		sum_total_time += part->finish_time - part->create_time;
+		avg_total_time = sum_total_time / part->id;
 		// ----
 		if (debug) {
-			printf("Part finished\tpart_id=%d\tcreate_time=%f\tfinish_time=%f\n", \
-					part->id, part->create_time, part->finish_time);
+			printf("All_Done\t%f\tSink    \t%-8d\t", event->start_time, part->id);
 		}
 		// ----
+		for (int i = 0; i < num_stations; i++) {
+			sum_waiting_time += part->dequeue_times[i] - part->enqueue_times[i];
+			// ----
+			if (debug) {
+				printf("%f", part->dequeue_times[i] - part->enqueue_times[i]);
+				if (i == num_stations - 1)
+					printf("\n");
+				else
+					printf("\t");
+			}
+			// ----
+		}
+		avg_waiting_time = sum_waiting_time / part->id;
 		// free this part
 		free_part(part);
 	}
 	else {  // enqueue the current part into next station's queue
 		q_push(q_list[event->station_id + 1], part);
-		printf("push part_id=%d to queue %c\n", part->id, 'A' + event->station_id + 1);
+		// ----
+		if (debug) {
+			printf("Enqueue \t%f\t%-8c\t%d\n", event->start_time, 'A' + event->station_id + 1, part->id);
+		}
+		// ----
 		part->enqueue_times[event->station_id + 1] = event->start_time;
 		// schedule the service event for the next station if it's free
 		if (q_size(q_list[event->station_id + 1]) == 1) {
@@ -105,8 +128,7 @@ void start_service(Event *event) {
 	schedule_next_event(next_start_time, event->station_id, &leave);
 	// ----
 	if (debug) {
-		printf("Start service\tcur_time=%f\tpart_id=%d\tstation_id=%c\n", \
-				event->start_time, part->id, 'A' + event->station_id);
+		printf("Start_Serv\t%f\t%-8c\t%d\n", event->start_time, 'A' + event->station_id, part->id);
 	}
 	// ----
 	// free this event
@@ -128,7 +150,14 @@ void create_part(Event *event) {
 	part->finish_time = -1;
 	// ----
 	if (debug) {
-		printf("Part created\tcur_time=%f\tpart_id=%d\n", event->start_time, part_counter);
+		printf("Create_Part\t%f\tSource  \t%-8d\t", event->start_time, part_counter);
+		for (int i = 0; i < num_stations; i++) {
+			printf("%f", part->service_times[i]);
+			if (i == num_stations - 1)
+				printf("\n");
+			else
+				printf("\t");
+		}
 	}
 	// ----
 	// schedule next create event
@@ -136,7 +165,11 @@ void create_part(Event *event) {
 	schedule_next_event(event->start_time + interval, -1, &create_part);
 	// send this part to the first station
 	q_push(q_list[0], part);
-	printf("push part_id=%d to queue %c\n", part->id, 'A' + event->station_id + 1);
+	// ----
+	if (debug) {
+		printf("Enqueue \t%f\t%-8c\t%d\n", event->start_time, 'A' + event->station_id + 1, part->id);
+	}
+	// ----
 	part->enqueue_times[0] = event->start_time;
 	// schedule the service event if the first station is available
 	if (q_size(q_list[0]) == 1) {
