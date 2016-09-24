@@ -6,7 +6,17 @@
  */
 
 #include <stdlib.h>
+#include <math.h>
+#include <time.h>
 
-double get_exp_rand(double mean) {
-	return 0.0;
+void rand_init() {
+	srand(time(NULL));
+}
+
+double urand() {
+	return (double)rand() / ((double)RAND_MAX + 1);
+}
+
+double randexp(double mean) {
+	return -mean * (log(1.0 - urand()));
 }

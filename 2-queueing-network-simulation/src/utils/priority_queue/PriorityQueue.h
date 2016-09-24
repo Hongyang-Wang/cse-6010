@@ -5,10 +5,8 @@
  *      Author: Frank
  */
 
-//#ifndef UTILS_PRIORITY_QUEUE_PRIORITYQUEUE_H_
-//#define UTILS_PRIORITY_QUEUE_PRIORITYQUEUE_H_
-#ifndef PRIORITYQUEUE_H_
-#define PRIORITYQUEUE_H_
+#ifndef UTILS_PRIORITY_QUEUE_PRIORITYQUEUE_H_
+#define UTILS_PRIORITY_QUEUE_PRIORITYQUEUE_H_
 
 typedef struct _pq_node {
 	void *data;

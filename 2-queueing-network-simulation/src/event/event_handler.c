@@ -100,13 +100,13 @@ void create_part(Event *event) {
 	part->id = part_counter;
 	part->service_times = (double *) malloc(num_stations * sizeof(double));
 	for (int i = 0; i < num_stations; i++) {
-		part->service_times[i] = get_exp_rand(S);
+		part->service_times[i] = randexp(S);
 	}
 	part->enqueue_times = (double *) malloc(num_stations * sizeof(double));
 	part->dequeue_times = (double *) malloc(num_stations * sizeof(double));
 	part->finish_time = -1;
 	// schedule next create event
-	double interval = get_exp_rand(A);
+	double interval = randexp(A);
 	schedule_next_event(event->start_time + interval, -1, &create_part);
 	// send this part to the first station
 	q_push(q_list[0], part);

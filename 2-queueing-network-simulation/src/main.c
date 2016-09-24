@@ -14,6 +14,7 @@
 #include "event/event_handler.h"
 #include "utils/queue/Queue.h"
 #include "utils/priority_queue/PriorityQueue.h"
+#include "utils/random/random.h"
 
 // global variables
 double S = 0, A = 0;
@@ -42,6 +43,7 @@ int main(int argc, char *argv[]) {
 
 	// initialize
 	part_counter = 0;
+	rand_init();
 	q_list = (Queue **) malloc(num_stations * sizeof(Queue *));
 	for (int i = 0; i < num_stations; i++) {
 		q_list[i] = (Queue *) malloc(sizeof(Queue));
