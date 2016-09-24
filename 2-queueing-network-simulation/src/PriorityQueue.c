@@ -27,42 +27,36 @@ int pq_size(PriorityQueue *q) {
 }
  */
 
-void pq_push(PriorityQueue *q, Event *p) {
+ void pq_push(PriorityQueue *q, Event *p) {
     PQNode *new_node = (PQNode *) malloc(sizeof(PQNode));
     new_node->event = p;
     if (q->tail == NULL)
         q->head = q->tail = q->compare = new_node;
     else {
-        if (new_node->event->start_time >= q->compare->event->start_time){
-            PQNode *temp = q->compare;
-            while (new_node->event->start_time >= q->compare->event->start_time) {
-                temp = q->compare;
-                if (q->compare != q->tail){
-                    q->compare = temp->next;
-                }
-                else if (q->compare == q->tail){
-                    q->tail->next = new_node;
-                    q->tail = new_node;
-                    q->compare = q->head;
-                    free(temp);
-                    return;
-                }
-            }
-            new_node->next = q->compare;
-            temp->next = new_node;
-            free(temp);
+        if (new_node->event->start_time >= q->tail->event->start_time){
+            q->tail->next = new_node;
+            q->tail = new_node;
+        }
+        else if (new_node->event->start_time <= q->head->event->start_time){
+            new_node->next = q->head;
+            q->head = new_node;
             q->compare = q->head;
         }
-        else{
-            PQNode *temp = q->head;
-            new_node->next = temp;
-            q->head = new_node;
-            free(temp);
+        else if (new_node->event->start_time > q->head->event->start_time){
+            while (new_node->event->start_time >= q->compare->event->start_time) {
+                q->compare = q->compare->next;
+            }
+            new_node->next = q->compare->next;
+            q->compare->next = new_node;
+            Event *temp = q->compare->event;
+            q->compare->event=new_node->event;
+            new_node->event=temp;
             q->compare = q->head;
         }
 
+        
     }
-}
+ }
 
 void *pq_pop(PriorityQueue *q) {
     Event *ret = NULL;
@@ -73,6 +67,7 @@ void *pq_pop(PriorityQueue *q) {
     PQNode *temp = q->head;
     ret = temp->event;
     q->head = temp->next;
+    q->compare = temp->next;
     free(temp);
     return ret;
 }
@@ -93,7 +88,7 @@ void pq_clear(PriorityQueue *q, void (*free_data)()) {
         free_data(temp->event);
         free(temp);
     }
-    q->head = q->tail = NULL;
+    q->head = q->tail  = q->compare = NULL;
 }
 
 

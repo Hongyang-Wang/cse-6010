@@ -10,7 +10,7 @@
 
 typedef struct _pq_node {
     Event *event;
-    struct _q_node *next;
+    struct _pq_node *next;
 } PQNode;
 
 
@@ -20,7 +20,7 @@ typedef struct _min_priority_queue {
 
 void pq_init(PriorityQueue *q);
 int pq_size(PriorityQueue *q);
-void pq_push(PriorityQueue *q, void *p);
+void pq_push(PriorityQueue *q, Event *p);
 void *pq_pop(PriorityQueue *q);
 void *pq_peek(PriorityQueue *q);
 void pq_clear(PriorityQueue *q, void (*free_data)());
