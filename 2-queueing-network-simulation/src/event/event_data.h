@@ -8,6 +8,8 @@
 #ifndef EVENT_EVENT_DATA_H_
 #define EVENT_EVENT_DATA_H_
 
+#include <stdlib.h>
+
 typedef struct {
 	int id;
 	double create_time;
