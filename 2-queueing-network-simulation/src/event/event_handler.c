@@ -5,6 +5,7 @@
  *      Author: Frank
  */
 
+#include <stdio.h>
 #include <stdlib.h>
 #include "event_data.h"
 #include "event_handler.h"
@@ -57,20 +58,34 @@ void schedule_next_event(double start_time, double station_id, void (*event_hand
 
 void leave(Event *event) {
 	Part *part = q_pop(q_list[event->station_id]);
+	printf("pop part_id=%d from queue %c\n", part->id, 'A' + event->station_id);
 	// schedule next service event for the next part in the queue of this station
 	if (q_size(q_list[event->station_id]) > 0) {
 		schedule_next_event(event->start_time, event->station_id, &start_service);
 	}
+	// ----
+	if (debug) {
+		printf("Service done\tcur_time=%f\tpart_id=%d\tstation_id=%c\n", \
+				event->start_time, part->id, 'A' + event->station_id);
+	}
+	// ----
 	// done if this is the last station
-	if (event->station_id == num_stations) {
+	if (event->station_id == num_stations - 1) {
 		part->finish_time = event->start_time;
 		// do some statistics
 
+		// ----
+		if (debug) {
+			printf("Part finished\tpart_id=%d\tcreate_time=%f\tfinish_time=%f\n", \
+					part->id, part->create_time, part->finish_time);
+		}
+		// ----
 		// free this part
 		free_part(part);
 	}
 	else {  // enqueue the current part into next station's queue
 		q_push(q_list[event->station_id + 1], part);
+		printf("push part_id=%d to queue %c\n", part->id, 'A' + event->station_id + 1);
 		part->enqueue_times[event->station_id + 1] = event->start_time;
 		// schedule the service event for the next station if it's free
 		if (q_size(q_list[event->station_id + 1]) == 1) {
@@ -88,6 +103,12 @@ void start_service(Event *event) {
 	// schedule dequeue event for this part
 	double next_start_time = event->start_time + part->service_times[event->station_id];
 	schedule_next_event(next_start_time, event->station_id, &leave);
+	// ----
+	if (debug) {
+		printf("Start service\tcur_time=%f\tpart_id=%d\tstation_id=%c\n", \
+				event->start_time, part->id, 'A' + event->station_id);
+	}
+	// ----
 	// free this event
 	free_event(event);
 }
@@ -105,11 +126,17 @@ void create_part(Event *event) {
 	part->enqueue_times = (double *) malloc(num_stations * sizeof(double));
 	part->dequeue_times = (double *) malloc(num_stations * sizeof(double));
 	part->finish_time = -1;
+	// ----
+	if (debug) {
+		printf("Part created\tcur_time=%f\tpart_id=%d\n", event->start_time, part_counter);
+	}
+	// ----
 	// schedule next create event
 	double interval = randexp(A);
 	schedule_next_event(event->start_time + interval, -1, &create_part);
 	// send this part to the first station
 	q_push(q_list[0], part);
+	printf("push part_id=%d to queue %c\n", part->id, 'A' + event->station_id + 1);
 	part->enqueue_times[0] = event->start_time;
 	// schedule the service event if the first station is available
 	if (q_size(q_list[0]) == 1) {

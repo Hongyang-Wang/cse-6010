@@ -48,6 +48,8 @@ void *q_pop(Queue *q) {
 	QNode *temp = q->head;
 	ret = temp->data;
 	q->head = temp->next;
+	if (temp == q->tail)  // important!!
+		q->tail = NULL;
 	free(temp);
 	q->size--;
 	return ret;

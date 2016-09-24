@@ -9,8 +9,11 @@
 #include <math.h>
 #include <time.h>
 
-void rand_init() {
-	srand(time(NULL));
+void rand_init(int randseed) {
+	if (randseed < 0)
+		srand(time(NULL));
+	else
+		srand(randseed);
 }
 
 double urand() {

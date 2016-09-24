@@ -29,7 +29,7 @@ PriorityQueue *pq = NULL;
 
 int main(int argc, char *argv[]) {
 	// parse input arguments
-	// .executable, avg_service_time, avg_interval, num_stations, total_simulation_time
+	// .executable, avg_service_time, avg_interval, num_stations, total_simulation_time, isdebug
 	if (argc != 6) {
 		printf("The program takes in 4 arguments: avg_service_time, avg_interval, \
 				num_stations, total_simulation_time, debug");
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
 
 	// initialize
 	part_counter = 0;
-	rand_init();
+	rand_init(-1);
 	q_list = (Queue **) malloc(num_stations * sizeof(Queue *));
 	for (int i = 0; i < num_stations; i++) {
 		q_list[i] = (Queue *) malloc(sizeof(Queue));

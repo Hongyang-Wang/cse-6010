@@ -8,7 +8,7 @@
 #ifndef UTILS_RANDOM_RANDOM_H_
 #define UTILS_RANDOM_RANDOM_H_
 
-void rand_init();
+void rand_init(int randseed);
 double urand();
 double randexp(double mean);
 
