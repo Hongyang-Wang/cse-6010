@@ -18,6 +18,7 @@ extern int part_counter;
 extern double simu_time;
 extern Queue **q_list;
 extern PriorityQueue *pq;
+extern int debug;
 
 int event_cmp(void *d1, void *d2) {
 	Event *e1 = (Event *) d1, *e2 = (Event *) d2;

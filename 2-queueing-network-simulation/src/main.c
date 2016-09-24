@@ -19,7 +19,8 @@
 double S = 0, A = 0;
 int num_stations = 0;
 int part_counter = 0;
-double simu_time;
+double simu_time = 0.0;
+int debug = -1;
 Queue **q_list = NULL;
 PriorityQueue *pq = NULL;
 // statistic variables
@@ -36,8 +37,8 @@ int main(int argc, char *argv[]) {
 	S = atof(argv[1]);
 	A = atof(argv[2]);
 	num_stations = atoi(argv[3]);
-	double simu_time = atof(argv[4]);
-	int debug = atoi(argv[5]);
+	simu_time = atof(argv[4]);
+	debug = atoi(argv[5]);
 
 	// initialize
 	part_counter = 0;
