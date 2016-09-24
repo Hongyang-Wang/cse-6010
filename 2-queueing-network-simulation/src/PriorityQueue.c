@@ -37,7 +37,16 @@ void pq_push(PriorityQueue *q, Event *p) {
             PQNode *temp = q->compare;
             while (new_node->event->start_time >= q->compare->event->start_time) {
                 temp = q->compare;
-                q->compare = temp->next;
+                if (q->compare != q->tail){
+                    q->compare = temp->next;
+                }
+                else if (q->compare == q->tail){
+                    q->tail->next = new_node;
+                    q->tail = new_node;
+                    q->compare = q->head;
+                    free(temp);
+                    return;
+                }
             }
             new_node->next = q->compare;
             temp->next = new_node;
