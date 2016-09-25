@@ -23,6 +23,7 @@ extern int debug;
 // statistic variables
 extern double sum_total_time, avg_total_time;
 extern double sum_waiting_time, avg_waiting_time;
+extern int count_finished_parts;
 
 void schedule_next_event(double start_time, double station_id, void (*event_handler)()) {
 	if (start_time >= simu_time)
@@ -74,6 +75,7 @@ void leave(Event *event) {
 			// ----
 		}
 		avg_waiting_time = sum_waiting_time / part->id;
+		count_finished_parts++;
 		// free this part
 		free_part(part);
 	}

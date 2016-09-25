@@ -27,6 +27,7 @@ PriorityQueue *pq = NULL;
 // statistic variables
 double sum_total_time = 0.0, avg_total_time = 0.0;
 double sum_waiting_time = 0.0, avg_waiting_time = 0.0;
+int count_finished_parts = 0;  // total number of parts finished during the simulation
 
 int main(int argc, char *argv[]) {
 	// parse input arguments
@@ -41,9 +42,8 @@ int main(int argc, char *argv[]) {
 	num_stations = atoi(argv[3]);
 	simu_time = atof(argv[4]);
 	debug = atoi(argv[5]);
-	printf("Parameters: avg_service_time=%f, arg_interval=%f, num_stations=%d, "
+	printf("Parameters: avg_service_time=%f, avg_interval=%f, num_stations=%d, "
 			"total_simulation_time=%f\n", S, A, num_stations, simu_time);
-	printf("------------------------------------------------------------------------------------------\n");
 
 	// initialize
 	part_counter = 0;
@@ -62,6 +62,7 @@ int main(int argc, char *argv[]) {
 	// simulate
 	// ----
 	if (debug) {
+		printf("------------------------------------------------------------------------------------------\n");
 		printf("Event_Type\tTimestamp\tStation_ID\tPart_ID \tServ_Times(for Source) OR Wait_Times(for Sink)\n");
 		printf("------------------------------------------------------------------------------------------\n");
 	}
@@ -76,8 +77,10 @@ int main(int argc, char *argv[]) {
 		printf("------------------------------------------------------------------------------------------\n");
 	}
 	// print simulation result
-	printf("Result: avg_total_time=%f, avg_waiting_time=%f\n", avg_total_time, avg_waiting_time);
-
+	printf("Result: avg_total_time=%f, avg_waiting_time=%f, total_part_finished=%d\n", \
+		avg_total_time, avg_waiting_time, count_finished_parts);
+	printf("\n");
+	
 	// clean
 	for (int i = 0; i < num_stations; i++) {
 		q_clear(q_list[i], &free_part);
