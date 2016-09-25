@@ -1,0 +1,60 @@
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.828088, avg_waiting_time=2.827892, total_part_finished=14877
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.047810, avg_waiting_time=3.038786, total_part_finished=14879
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.987849, avg_waiting_time=2.962470, total_part_finished=14856
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.797885, avg_waiting_time=2.784073, total_part_finished=14737
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.148744, avg_waiting_time=3.132438, total_part_finished=14967
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.090198, avg_waiting_time=3.075560, total_part_finished=15119
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.158284, avg_waiting_time=3.148938, total_part_finished=15048
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.123122, avg_waiting_time=3.090085, total_part_finished=14980
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.100552, avg_waiting_time=3.095214, total_part_finished=15006
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.767832, avg_waiting_time=2.774759, total_part_finished=14913
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.970071, avg_waiting_time=2.991747, total_part_finished=15232
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.045273, avg_waiting_time=3.033029, total_part_finished=15004
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.788731, avg_waiting_time=2.790659, total_part_finished=14954
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.220550, avg_waiting_time=3.211216, total_part_finished=15032
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.993780, avg_waiting_time=2.979739, total_part_finished=14996
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.963180, avg_waiting_time=2.966155, total_part_finished=15157
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.921651, avg_waiting_time=2.932356, total_part_finished=14828
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=4.915215, avg_waiting_time=2.925678, total_part_finished=15055
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.026819, avg_waiting_time=3.041003, total_part_finished=15055
+
+Parameters: avg_service_time=2.000000, avg_interval=3.333333, num_stations=1, total_simulation_time=50000.000000
+Result: avg_total_time=5.107350, avg_waiting_time=3.106729, total_part_finished=15018
+

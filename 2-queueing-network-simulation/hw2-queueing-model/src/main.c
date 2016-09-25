@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
 
 	// initialize
 	part_counter = 0;
-	rand_init(6010);
+	rand_init(-1);
 	q_list = (Queue **) malloc(num_stations * sizeof(Queue *));
 	for (int i = 0; i < num_stations; i++) {
 		q_list[i] = (Queue *) malloc(sizeof(Queue));
