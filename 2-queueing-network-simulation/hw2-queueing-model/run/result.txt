@@ -1,400 +1,300 @@
-Parameters: avg_service_time=10.000000, arg_interval=1.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=1.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=4818.817191, avg_waiting_time=4788.638750, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=2.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=2.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=4360.156605, avg_waiting_time=4329.978164, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=3.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=3.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=3901.496019, avg_waiting_time=3871.317578, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=4.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=4.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=3442.835433, avg_waiting_time=3412.656992, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=5.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=5.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=2984.174847, avg_waiting_time=2953.996406, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=6.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=6.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=2525.514261, avg_waiting_time=2495.335820, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=7.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=7.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=2066.853675, avg_waiting_time=2036.675234, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=8.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=8.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=1608.193089, avg_waiting_time=1578.014648, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=9.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=9.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=1149.532503, avg_waiting_time=1119.354062, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=10.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=10.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=690.871917, avg_waiting_time=660.693476, total_part_finished=930
 
-Parameters: avg_service_time=10.000000, arg_interval=11.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=11.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=317.520187, avg_waiting_time=287.254866, total_part_finished=898
 
-Parameters: avg_service_time=10.000000, arg_interval=12.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=12.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=191.184390, avg_waiting_time=160.725222, total_part_finished=841
 
-Parameters: avg_service_time=10.000000, arg_interval=13.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=13.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=129.251134, avg_waiting_time=98.613742, total_part_finished=764
 
-Parameters: avg_service_time=10.000000, arg_interval=14.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=14.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=99.696603, avg_waiting_time=69.199036, total_part_finished=715
 
-Parameters: avg_service_time=10.000000, arg_interval=15.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=15.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=85.283536, avg_waiting_time=54.825639, total_part_finished=662
 
-Parameters: avg_service_time=10.000000, arg_interval=16.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=16.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=74.381554, avg_waiting_time=44.196208, total_part_finished=619
 
-Parameters: avg_service_time=10.000000, arg_interval=17.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=17.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=69.349189, avg_waiting_time=38.892098, total_part_finished=587
 
-Parameters: avg_service_time=10.000000, arg_interval=18.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=18.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=64.321604, avg_waiting_time=34.123803, total_part_finished=552
 
-Parameters: avg_service_time=10.000000, arg_interval=19.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=19.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=60.952767, avg_waiting_time=30.876819, total_part_finished=517
 
-Parameters: avg_service_time=10.000000, arg_interval=20.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=20.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=58.413757, avg_waiting_time=28.084981, total_part_finished=486
 
-Parameters: avg_service_time=10.000000, arg_interval=21.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=21.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=56.769833, avg_waiting_time=26.268937, total_part_finished=466
 
-Parameters: avg_service_time=10.000000, arg_interval=22.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=22.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=55.346539, avg_waiting_time=24.608879, total_part_finished=446
 
-Parameters: avg_service_time=10.000000, arg_interval=23.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=23.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=54.188401, avg_waiting_time=23.376315, total_part_finished=435
 
-Parameters: avg_service_time=10.000000, arg_interval=24.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=24.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=53.124547, avg_waiting_time=22.214782, total_part_finished=418
 
-Parameters: avg_service_time=10.000000, arg_interval=25.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=25.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=51.599523, avg_waiting_time=20.855788, total_part_finished=401
 
-Parameters: avg_service_time=10.000000, arg_interval=26.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=26.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=50.382894, avg_waiting_time=19.746428, total_part_finished=384
 
-Parameters: avg_service_time=10.000000, arg_interval=27.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=27.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=49.637441, avg_waiting_time=18.726227, total_part_finished=365
 
-Parameters: avg_service_time=10.000000, arg_interval=28.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=28.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=48.734596, avg_waiting_time=18.023445, total_part_finished=349
 
-Parameters: avg_service_time=10.000000, arg_interval=29.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=29.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=48.491172, avg_waiting_time=17.585961, total_part_finished=340
 
-Parameters: avg_service_time=10.000000, arg_interval=30.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=30.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=47.291917, avg_waiting_time=16.625570, total_part_finished=330
 
-Parameters: avg_service_time=10.000000, arg_interval=31.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=31.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=46.581302, avg_waiting_time=15.885301, total_part_finished=319
 
-Parameters: avg_service_time=10.000000, arg_interval=32.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=32.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=46.077976, avg_waiting_time=15.286640, total_part_finished=307
 
-Parameters: avg_service_time=10.000000, arg_interval=33.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=33.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=45.874852, avg_waiting_time=14.999057, total_part_finished=299
 
-Parameters: avg_service_time=10.000000, arg_interval=34.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=34.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=45.557079, avg_waiting_time=14.644799, total_part_finished=295
 
-Parameters: avg_service_time=10.000000, arg_interval=35.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=35.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=45.115201, avg_waiting_time=14.301200, total_part_finished=289
 
-Parameters: avg_service_time=10.000000, arg_interval=36.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=36.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=44.957515, avg_waiting_time=14.117125, total_part_finished=281
 
-Parameters: avg_service_time=10.000000, arg_interval=37.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=37.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=44.337244, avg_waiting_time=13.605915, total_part_finished=275
 
-Parameters: avg_service_time=10.000000, arg_interval=38.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=38.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=43.593123, avg_waiting_time=13.115410, total_part_finished=269
 
-Parameters: avg_service_time=10.000000, arg_interval=39.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=39.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=42.957402, avg_waiting_time=12.529008, total_part_finished=262
 
-Parameters: avg_service_time=10.000000, arg_interval=40.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=40.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=42.754362, avg_waiting_time=12.191773, total_part_finished=254
 
-Parameters: avg_service_time=10.000000, arg_interval=41.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=41.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=42.313010, avg_waiting_time=11.773419, total_part_finished=250
 
-Parameters: avg_service_time=10.000000, arg_interval=42.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=42.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=41.917708, avg_waiting_time=11.265580, total_part_finished=244
 
-Parameters: avg_service_time=10.000000, arg_interval=43.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=43.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=41.839868, avg_waiting_time=11.051622, total_part_finished=238
 
-Parameters: avg_service_time=10.000000, arg_interval=44.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=44.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=41.194034, avg_waiting_time=10.445393, total_part_finished=231
 
-Parameters: avg_service_time=10.000000, arg_interval=45.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=45.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=41.039838, avg_waiting_time=10.300850, total_part_finished=226
 
-Parameters: avg_service_time=10.000000, arg_interval=46.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=46.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.810232, avg_waiting_time=10.069137, total_part_finished=221
 
-Parameters: avg_service_time=10.000000, arg_interval=47.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=47.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.718942, avg_waiting_time=9.862355, total_part_finished=218
 
-Parameters: avg_service_time=10.000000, arg_interval=48.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=48.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.578671, avg_waiting_time=9.627769, total_part_finished=216
 
-Parameters: avg_service_time=10.000000, arg_interval=49.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=49.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.573930, avg_waiting_time=9.448751, total_part_finished=213
 
-Parameters: avg_service_time=10.000000, arg_interval=50.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=50.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.341706, avg_waiting_time=9.279459, total_part_finished=207
 
-Parameters: avg_service_time=10.000000, arg_interval=51.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=51.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.355706, avg_waiting_time=9.229903, total_part_finished=199
 
-Parameters: avg_service_time=10.000000, arg_interval=52.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=52.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=40.227339, avg_waiting_time=9.065974, total_part_finished=196
 
-Parameters: avg_service_time=10.000000, arg_interval=53.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=53.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=39.536835, avg_waiting_time=8.666079, total_part_finished=191
 
-Parameters: avg_service_time=10.000000, arg_interval=54.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=54.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=39.587829, avg_waiting_time=8.458839, total_part_finished=186
 
-Parameters: avg_service_time=10.000000, arg_interval=55.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=55.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=39.152404, avg_waiting_time=8.289136, total_part_finished=185
 
-Parameters: avg_service_time=10.000000, arg_interval=56.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=56.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=38.837989, avg_waiting_time=8.213456, total_part_finished=182
 
-Parameters: avg_service_time=10.000000, arg_interval=57.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=57.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=38.701888, avg_waiting_time=8.138574, total_part_finished=179
 
-Parameters: avg_service_time=10.000000, arg_interval=58.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=58.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=38.490401, avg_waiting_time=7.927087, total_part_finished=179
 
-Parameters: avg_service_time=10.000000, arg_interval=59.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=59.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=38.270158, avg_waiting_time=7.764480, total_part_finished=178
 
-Parameters: avg_service_time=10.000000, arg_interval=60.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=60.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.789619, avg_waiting_time=7.539610, total_part_finished=173
 
-Parameters: avg_service_time=10.000000, arg_interval=61.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=61.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.735123, avg_waiting_time=7.403256, total_part_finished=172
 
-Parameters: avg_service_time=10.000000, arg_interval=62.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=62.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.777841, avg_waiting_time=7.298618, total_part_finished=167
 
-Parameters: avg_service_time=10.000000, arg_interval=63.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=63.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.343386, avg_waiting_time=7.176014, total_part_finished=166
 
-Parameters: avg_service_time=10.000000, arg_interval=64.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=64.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.004434, avg_waiting_time=7.054517, total_part_finished=165
 
-Parameters: avg_service_time=10.000000, arg_interval=65.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=65.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=37.034392, avg_waiting_time=6.944812, total_part_finished=164
 
-Parameters: avg_service_time=10.000000, arg_interval=66.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=66.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=36.888482, avg_waiting_time=6.798903, total_part_finished=164
 
-Parameters: avg_service_time=10.000000, arg_interval=67.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=67.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=36.746324, avg_waiting_time=6.656745, total_part_finished=164
 
-Parameters: avg_service_time=10.000000, arg_interval=68.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=68.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=36.608291, avg_waiting_time=6.518711, total_part_finished=164
 
-Parameters: avg_service_time=10.000000, arg_interval=69.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=69.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.965086, avg_waiting_time=6.048290, total_part_finished=162
 
-Parameters: avg_service_time=10.000000, arg_interval=70.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=70.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.520869, avg_waiting_time=6.043619, total_part_finished=159
 
-Parameters: avg_service_time=10.000000, arg_interval=71.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=71.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.458578, avg_waiting_time=5.904002, total_part_finished=158
 
-Parameters: avg_service_time=10.000000, arg_interval=72.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=72.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.525614, avg_waiting_time=5.813460, total_part_finished=154
 
-Parameters: avg_service_time=10.000000, arg_interval=73.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=73.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.411484, avg_waiting_time=5.699330, total_part_finished=154
 
-Parameters: avg_service_time=10.000000, arg_interval=74.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=74.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=35.078215, avg_waiting_time=5.638204, total_part_finished=152
 
-Parameters: avg_service_time=10.000000, arg_interval=75.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=75.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.944703, avg_waiting_time=5.563033, total_part_finished=151
 
-Parameters: avg_service_time=10.000000, arg_interval=76.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=76.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.114116, avg_waiting_time=5.164257, total_part_finished=147
 
-Parameters: avg_service_time=10.000000, arg_interval=77.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=77.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.002870, avg_waiting_time=5.053011, total_part_finished=147
 
-Parameters: avg_service_time=10.000000, arg_interval=78.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=78.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.164116, avg_waiting_time=5.044718, total_part_finished=144
 
-Parameters: avg_service_time=10.000000, arg_interval=79.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=79.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.216013, avg_waiting_time=4.965638, total_part_finished=143
 
-Parameters: avg_service_time=10.000000, arg_interval=80.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=80.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.064139, avg_waiting_time=4.885444, total_part_finished=142
 
-Parameters: avg_service_time=10.000000, arg_interval=81.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=81.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.146669, avg_waiting_time=4.804112, total_part_finished=141
 
-Parameters: avg_service_time=10.000000, arg_interval=82.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=82.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.237423, avg_waiting_time=4.727147, total_part_finished=140
 
-Parameters: avg_service_time=10.000000, arg_interval=83.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=83.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=34.185355, avg_waiting_time=4.651867, total_part_finished=139
 
-Parameters: avg_service_time=10.000000, arg_interval=84.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=84.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.751794, avg_waiting_time=4.533138, total_part_finished=134
 
-Parameters: avg_service_time=10.000000, arg_interval=85.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=85.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.471204, avg_waiting_time=4.496602, total_part_finished=132
 
-Parameters: avg_service_time=10.000000, arg_interval=86.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=86.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.387821, avg_waiting_time=4.424904, total_part_finished=131
 
-Parameters: avg_service_time=10.000000, arg_interval=87.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=87.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.283584, avg_waiting_time=4.320667, total_part_finished=131
 
-Parameters: avg_service_time=10.000000, arg_interval=88.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=88.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.227124, avg_waiting_time=4.190606, total_part_finished=129
 
-Parameters: avg_service_time=10.000000, arg_interval=89.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=89.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.149962, avg_waiting_time=4.123853, total_part_finished=128
 
-Parameters: avg_service_time=10.000000, arg_interval=90.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=90.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.165531, avg_waiting_time=4.056117, total_part_finished=127
 
-Parameters: avg_service_time=10.000000, arg_interval=91.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=91.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=33.153257, avg_waiting_time=3.991244, total_part_finished=126
 
-Parameters: avg_service_time=10.000000, arg_interval=92.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=92.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=32.928481, avg_waiting_time=3.925512, total_part_finished=125
 
-Parameters: avg_service_time=10.000000, arg_interval=93.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=93.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=32.950728, avg_waiting_time=3.896898, total_part_finished=123
 
-Parameters: avg_service_time=10.000000, arg_interval=94.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=94.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=32.858411, avg_waiting_time=3.804582, total_part_finished=123
 
-Parameters: avg_service_time=10.000000, arg_interval=95.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=95.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=32.743607, avg_waiting_time=3.742693, total_part_finished=122
 
-Parameters: avg_service_time=10.000000, arg_interval=96.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=96.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=32.609338, avg_waiting_time=3.682190, total_part_finished=121
 
-Parameters: avg_service_time=10.000000, arg_interval=97.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=97.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=31.984434, avg_waiting_time=3.215553, total_part_finished=117
 
-Parameters: avg_service_time=10.000000, arg_interval=98.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=98.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=31.903901, avg_waiting_time=3.135019, total_part_finished=117
 
-Parameters: avg_service_time=10.000000, arg_interval=99.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=99.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=31.877695, avg_waiting_time=3.093161, total_part_finished=116
 
-Parameters: avg_service_time=10.000000, arg_interval=100.000000, num_stations=3, total_simulation_time=10000.000000
-------------------------------------------------------------------------------------------
+Parameters: avg_service_time=10.000000, avg_interval=100.000000, num_stations=3, total_simulation_time=10000.000000
 Result: avg_total_time=31.808811, avg_waiting_time=3.024276, total_part_finished=116
 
