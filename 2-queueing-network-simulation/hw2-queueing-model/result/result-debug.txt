@@ -1,0 +1,282 @@
+memory error detector
+==20919== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==20919== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==20919== Command: ../bin/simulate 10 3 3 100 1
+==20919== 
+Parameters: avg_service_time=10.000000, avg_interval=3.000000, num_stations=3, total_simulation_time=100.000000
+------------------------------------------------------------------------------------------
+Event_Type	Timestamp	Station_ID	Part_ID 	Serv_Times(for Source) OR Wait_Times(for Sink)
+------------------------------------------------------------------------------------------
+Create_Part	0.000000	Source  	1       	2.412845	2.412845	2.412845
+Enqueue 	0.000000	A       	1
+Start_Serv	0.000000	A       	1
+Create_Part	1.111437	Source  	2       	20.763360	20.763360	20.763360
+Enqueue 	1.111437	A       	2
+Dequeue 	2.412845	A       	1
+End_Serv	2.412845	A       	1
+Enqueue 	2.412845	B       	1
+Start_Serv	2.412845	B       	1
+Start_Serv	2.412845	A       	2
+Create_Part	3.305425	Source  	3       	7.677018	7.677018	7.677018
+Enqueue 	3.305425	A       	3
+Create_Part	3.340577	Source  	4       	0.517445	0.517445	0.517445
+Enqueue 	3.340577	A       	4
+Create_Part	3.597606	Source  	5       	5.149920	5.149920	5.149920
+Enqueue 	3.597606	A       	5
+Dequeue 	4.825690	B       	1
+End_Serv	4.825690	B       	1
+Enqueue 	4.825690	C       	1
+Start_Serv	4.825690	C       	1
+Create_Part	7.154334	Source  	6       	2.374440	2.374440	2.374440
+Enqueue 	7.154334	A       	6
+Dequeue 	7.238535	C       	1
+End_Serv	7.238535	C       	1
+All_Done	7.238535	Sink    	1       	0.000000	0.000000	0.000000
+Create_Part	13.530412	Source  	7       	5.920778	5.920778	5.920778
+Enqueue 	13.530412	A       	7
+Create_Part	14.858995	Source  	8       	2.250990	2.250990	2.250990
+Enqueue 	14.858995	A       	8
+Create_Part	14.930298	Source  	9       	3.622287	3.622287	3.622287
+Enqueue 	14.930298	A       	9
+Create_Part	17.004662	Source  	10      	2.616363	2.616363	2.616363
+Enqueue 	17.004662	A       	10
+Create_Part	17.944247	Source  	11      	0.034638	0.034638	0.034638
+Enqueue 	17.944247	A       	11
+Create_Part	18.281569	Source  	12      	21.648234	21.648234	21.648234
+Enqueue 	18.281569	A       	12
+Create_Part	18.610416	Source  	13      	0.599204	0.599204	0.599204
+Enqueue 	18.610416	A       	13
+Create_Part	18.702755	Source  	14      	2.972664	2.972664	2.972664
+Enqueue 	18.702755	A       	14
+Create_Part	19.547852	Source  	15      	2.031376	2.031376	2.031376
+Enqueue 	19.547852	A       	15
+Create_Part	19.611086	Source  	16      	1.410825	1.410825	1.410825
+Enqueue 	19.611086	A       	16
+Create_Part	21.134656	Source  	17      	4.011552	4.011552	4.011552
+Enqueue 	21.134656	A       	17
+Create_Part	21.153294	Source  	18      	24.882786	24.882786	24.882786
+Enqueue 	21.153294	A       	18
+Dequeue 	23.176205	A       	2
+End_Serv	23.176205	A       	2
+Enqueue 	23.176205	B       	2
+Start_Serv	23.176205	B       	2
+Start_Serv	23.176205	A       	3
+Create_Part	27.191459	Source  	19      	0.180034	0.180034	0.180034
+Enqueue 	27.191459	A       	19
+Dequeue 	30.853223	A       	3
+End_Serv	30.853223	A       	3
+Enqueue 	30.853223	B       	3
+Start_Serv	30.853223	A       	4
+Dequeue 	31.370668	A       	4
+End_Serv	31.370668	A       	4
+Enqueue 	31.370668	B       	4
+Start_Serv	31.370668	A       	5
+Dequeue 	36.520588	A       	5
+End_Serv	36.520588	A       	5
+Enqueue 	36.520588	B       	5
+Start_Serv	36.520588	A       	6
+Create_Part	37.459559	Source  	20      	29.658681	29.658681	29.658681
+Enqueue 	37.459559	A       	20
+Dequeue 	38.895028	A       	6
+End_Serv	38.895028	A       	6
+Enqueue 	38.895028	B       	6
+Start_Serv	38.895028	A       	7
+Create_Part	39.095484	Source  	21      	10.841346	10.841346	10.841346
+Enqueue 	39.095484	A       	21
+Create_Part	39.617984	Source  	22      	3.580285	3.580285	3.580285
+Enqueue 	39.617984	A       	22
+Create_Part	39.962967	Source  	23      	7.290790	7.290790	7.290790
+Enqueue 	39.962967	A       	23
+Create_Part	42.057505	Source  	24      	1.416973	1.416973	1.416973
+Enqueue 	42.057505	A       	24
+Dequeue 	43.939565	B       	2
+End_Serv	43.939565	B       	2
+Enqueue 	43.939565	C       	2
+Start_Serv	43.939565	C       	2
+Start_Serv	43.939565	B       	3
+Dequeue 	44.815806	A       	7
+End_Serv	44.815806	A       	7
+Enqueue 	44.815806	B       	7
+Start_Serv	44.815806	A       	8
+Dequeue 	47.066796	A       	8
+End_Serv	47.066796	A       	8
+Enqueue 	47.066796	B       	8
+Start_Serv	47.066796	A       	9
+Create_Part	47.227406	Source  	25      	0.016642	0.016642	0.016642
+Enqueue 	47.227406	A       	25
+Create_Part	48.577186	Source  	26      	0.947685	0.947685	0.947685
+Enqueue 	48.577186	A       	26
+Create_Part	48.592587	Source  	27      	6.323806	6.323806	6.323806
+Enqueue 	48.592587	A       	27
+Dequeue 	50.689084	A       	9
+End_Serv	50.689084	A       	9
+Enqueue 	50.689084	B       	9
+Start_Serv	50.689084	A       	10
+Dequeue 	51.616583	B       	3
+End_Serv	51.616583	B       	3
+Enqueue 	51.616583	C       	3
+Start_Serv	51.616583	B       	4
+Dequeue 	52.134029	B       	4
+End_Serv	52.134029	B       	4
+Enqueue 	52.134029	C       	4
+Start_Serv	52.134029	B       	5
+Dequeue 	53.305447	A       	10
+End_Serv	53.305447	A       	10
+Enqueue 	53.305447	B       	10
+Start_Serv	53.305447	A       	11
+Dequeue 	53.340085	A       	11
+End_Serv	53.340085	A       	11
+Enqueue 	53.340085	B       	11
+Start_Serv	53.340085	A       	12
+Dequeue 	57.283948	B       	5
+End_Serv	57.283948	B       	5
+Enqueue 	57.283948	C       	5
+Start_Serv	57.283948	B       	6
+Dequeue 	59.658388	B       	6
+End_Serv	59.658388	B       	6
+Enqueue 	59.658388	C       	6
+Start_Serv	59.658388	B       	7
+Create_Part	59.737809	Source  	28      	1.153462	1.153462	1.153462
+Enqueue 	59.737809	A       	28
+Create_Part	61.982743	Source  	29      	0.059750	0.059750	0.059750
+Enqueue 	61.982743	A       	29
+Create_Part	63.350317	Source  	30      	14.798762	14.798762	14.798762
+Enqueue 	63.350317	A       	30
+Create_Part	63.981708	Source  	31      	4.893147	4.893147	4.893147
+Enqueue 	63.981708	A       	31
+Dequeue 	64.702925	C       	2
+End_Serv	64.702925	C       	2
+All_Done	64.702925	Sink    	2       	1.301408	0.000000	0.000000
+Start_Serv	64.702925	C       	3
+Dequeue 	65.579167	B       	7
+End_Serv	65.579167	B       	7
+Enqueue 	65.579167	C       	7
+Start_Serv	65.579167	B       	8
+Dequeue 	67.830157	B       	8
+End_Serv	67.830157	B       	8
+Enqueue 	67.830157	C       	8
+Start_Serv	67.830157	B       	9
+Create_Part	71.009321	Source  	32      	8.867496	8.867496	8.867496
+Enqueue 	71.009321	A       	32
+Dequeue 	71.452444	B       	9
+End_Serv	71.452444	B       	9
+Enqueue 	71.452444	C       	9
+Start_Serv	71.452444	B       	10
+Dequeue 	72.379943	C       	3
+End_Serv	72.379943	C       	3
+All_Done	72.379943	Sink    	3       	19.870780	13.086342	13.086342
+Start_Serv	72.379943	C       	4
+Dequeue 	72.897389	C       	4
+End_Serv	72.897389	C       	4
+All_Done	72.897389	Sink    	4       	27.512647	20.245915	20.245915
+Start_Serv	72.897389	C       	5
+Dequeue 	74.068807	B       	10
+End_Serv	74.068807	B       	10
+Enqueue 	74.068807	C       	10
+Start_Serv	74.068807	B       	11
+Dequeue 	74.103445	B       	11
+End_Serv	74.103445	B       	11
+Enqueue 	74.103445	C       	11
+Create_Part	74.800569	Source  	33      	24.091694	24.091694	24.091694
+Enqueue 	74.800569	A       	33
+Dequeue 	74.988319	A       	12
+End_Serv	74.988319	A       	12
+Enqueue 	74.988319	B       	12
+Start_Serv	74.988319	B       	12
+Start_Serv	74.988319	A       	13
+Dequeue 	75.587523	A       	13
+End_Serv	75.587523	A       	13
+Enqueue 	75.587523	B       	13
+Start_Serv	75.587523	A       	14
+Create_Part	76.909885	Source  	34      	8.765485	8.765485	8.765485
+Enqueue 	76.909885	A       	34
+Dequeue 	78.047309	C       	5
+End_Serv	78.047309	C       	5
+All_Done	78.047309	Sink    	5       	27.773063	15.613440	15.613440
+Start_Serv	78.047309	C       	6
+Dequeue 	78.560186	A       	14
+End_Serv	78.560186	A       	14
+Enqueue 	78.560186	B       	14
+Start_Serv	78.560186	A       	15
+Dequeue 	80.421748	C       	6
+End_Serv	80.421748	C       	6
+All_Done	80.421748	Sink    	6       	29.366254	18.388920	18.388920
+Start_Serv	80.421748	C       	7
+Dequeue 	80.591563	A       	15
+End_Serv	80.591563	A       	15
+Enqueue 	80.591563	B       	15
+Start_Serv	80.591563	A       	16
+Dequeue 	82.002388	A       	16
+End_Serv	82.002388	A       	16
+Enqueue 	82.002388	B       	16
+Start_Serv	82.002388	A       	17
+Create_Part	84.801171	Source  	35      	6.392846	6.392846	6.392846
+Enqueue 	84.801171	A       	35
+Dequeue 	86.013940	A       	17
+End_Serv	86.013940	A       	17
+Enqueue 	86.013940	B       	17
+Start_Serv	86.013940	A       	18
+Dequeue 	86.342527	C       	7
+End_Serv	86.342527	C       	7
+All_Done	86.342527	Sink    	7       	25.364617	14.842582	14.842582
+Start_Serv	86.342527	C       	8
+Create_Part	87.080745	Source  	36      	4.281546	4.281546	4.281546
+Enqueue 	87.080745	A       	36
+Create_Part	87.512827	Source  	37      	11.780142	11.780142	11.780142
+Enqueue 	87.512827	A       	37
+Dequeue 	88.593517	C       	8
+End_Serv	88.593517	C       	8
+All_Done	88.593517	Sink    	8       	29.956811	18.512370	18.512370
+Start_Serv	88.593517	C       	9
+Create_Part	90.655754	Source  	38      	2.780815	2.780815	2.780815
+Enqueue 	90.655754	A       	38
+Create_Part	91.362000	Source  	39      	1.645751	1.645751	1.645751
+Enqueue 	91.362000	A       	39
+Dequeue 	92.215804	C       	9
+End_Serv	92.215804	C       	9
+All_Done	92.215804	Sink    	9       	32.136499	17.141073	17.141073
+Start_Serv	92.215804	C       	10
+Create_Part	92.771440	Source  	40      	0.317809	0.317809	0.317809
+Enqueue 	92.771440	A       	40
+Create_Part	93.271052	Source  	41      	13.363854	13.363854	13.363854
+Enqueue 	93.271052	A       	41
+Create_Part	93.660345	Source  	42      	1.726042	1.726042	1.726042
+Enqueue 	93.660345	A       	42
+Create_Part	94.351910	Source  	43      	1.024139	1.024139	1.024139
+Enqueue 	94.351910	A       	43
+Dequeue 	94.832167	C       	10
+End_Serv	94.832167	C       	10
+All_Done	94.832167	Sink    	10      	33.684422	18.146997	18.146997
+Start_Serv	94.832167	C       	11
+Dequeue 	94.866806	C       	11
+End_Serv	94.866806	C       	11
+All_Done	94.866806	Sink    	11      	35.361200	20.728722	20.728722
+Create_Part	95.285671	Source  	44      	13.194427	13.194427	13.194427
+Enqueue 	95.285671	A       	44
+Create_Part	95.612777	Source  	45      	10.039425	10.039425	10.039425
+Enqueue 	95.612777	A       	45
+Dequeue 	96.636553	B       	12
+End_Serv	96.636553	B       	12
+Enqueue 	96.636553	C       	12
+Start_Serv	96.636553	C       	12
+Start_Serv	96.636553	B       	13
+Dequeue 	97.235757	B       	13
+End_Serv	97.235757	B       	13
+Enqueue 	97.235757	C       	13
+Start_Serv	97.235757	B       	14
+Create_Part	97.722672	Source  	46      	3.468557	3.468557	3.468557
+Enqueue 	97.722672	A       	46
+Create_Part	97.784878	Source  	47      	5.258824	5.258824	5.258824
+Enqueue 	97.784878	A       	47
+------------------------------------------------------------------------------------------
+Result: avg_total_time=66.887334, avg_waiting_time=52.340038, total_part_finished=11
+
+==20919== 
+==20919== HEAP SUMMARY:
+==20919==     in use at exit: 0 bytes in 0 blocks
+==20919==   total heap usage: 535 allocs, 535 frees, 12,288 bytes allocated
+==20919== 
+==20919== All heap blocks were freed -- no leaks are possible
+==20919== 
+==20919== For counts of detected and suppressed errors, rerun with: -v
+==20919== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 6 from 6)

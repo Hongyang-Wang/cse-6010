@@ -17,16 +17,16 @@
 #include "utils/random/random.h"
 
 // global variables
-double S = 0, A = 0;
-int num_stations = 0;
-int part_counter = 0;
-double simu_time = 0.0;
-int debug = -1;
-Queue **q_list = NULL;
-PriorityQueue *pq = NULL;
+double S = 0, A = 0;  // average service time, average inter-arrival time
+int num_stations = 0;  // total number of stations (3 for this assignment)
+int part_counter = 0;  // global counter of how many parts created so far
+double simu_time = 0.0;  // total simulation duration
+int debug = -1;  // whether to output debug info
+Queue **q_list = NULL;  // queues at each station holding Parts
+PriorityQueue *pq = NULL;  // global priority queue holding Events
 // statistic variables
-double sum_total_time = 0.0, avg_total_time = 0.0;
-double sum_waiting_time = 0.0, avg_waiting_time = 0.0;
+double sum_total_time = 0.0, avg_total_time = 0.0;  // records the total/average time a part stays in the system
+double sum_waiting_time = 0.0, avg_waiting_time = 0.0;  // records the total/average queueing time for a part
 int count_finished_parts = 0;  // total number of parts finished during the simulation
 
 int main(int argc, char *argv[]) {

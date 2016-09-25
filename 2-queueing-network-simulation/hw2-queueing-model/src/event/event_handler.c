@@ -119,8 +119,9 @@ void create_part(Event *event) {
 	part->create_time = event->start_time;
 	part->id = part_counter;
 	part->service_times = (double *) malloc(num_stations * sizeof(double));
+	double serv_time = randexp(S);
 	for (int i = 0; i < num_stations; i++) {
-		part->service_times[i] = randexp(S);
+		part->service_times[i] = serv_time;
 	}
 	part->enqueue_times = (double *) malloc(num_stations * sizeof(double));
 	part->dequeue_times = (double *) malloc(num_stations * sizeof(double));

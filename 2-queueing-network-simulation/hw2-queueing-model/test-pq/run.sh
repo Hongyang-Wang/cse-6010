@@ -1,4 +1,4 @@
-# define arguments
+# this script measures the performance of the priority queue
 NUM_ITERS=1000  # total number of insertions and deletions in the for loop
 
 # testing performance

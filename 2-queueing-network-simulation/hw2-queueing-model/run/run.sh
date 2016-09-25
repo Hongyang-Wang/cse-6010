@@ -1,4 +1,4 @@
-# define arguments
+# this script runs a set of simulations with different arrival rate 1/A
 S=10  # average service time
 TOTAL_TIME=10000  # total simulation time
 NUM_STATIONS=3

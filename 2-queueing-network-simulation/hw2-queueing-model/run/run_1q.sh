@@ -1,4 +1,4 @@
-# define arguments
+# this script runs a set of simulations with only one station in the system, and compares with the theory
 S=2  # average service time
 A=3.333333  # average interarrival time
 TOTAL_TIME=50000  # total simulation time
