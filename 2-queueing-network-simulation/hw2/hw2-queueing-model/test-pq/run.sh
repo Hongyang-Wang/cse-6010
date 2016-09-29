@@ -2,7 +2,7 @@
 NUM_ITERS=1000  # total number of insertions and deletions in the for loop
 
 # testing performance
-for ((N=1000; N <= 20000; N+=1000))
+for ((N=10000; N <= 100000; N+=10000))
 do
     ../bin/test-pq ${N} ${NUM_ITERS}
 done
